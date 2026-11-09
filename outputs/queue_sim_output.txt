@@ -1,0 +1,12 @@
+== Baseline vs slowed consumer (maxsize=5) ==
+fast consumer (no delay)                     min=   0.063 ms  max=   0.326 ms  avg=   0.139 ms  producer_blocks=3
+slow consumer (5 ms delay)                   min=   0.121 ms  max=  30.915 ms  avg=  25.468 ms  producer_blocks=15
+slower consumer (20 ms delay)                min=   0.134 ms  max= 122.023 ms  avg= 100.406 ms  producer_blocks=15
+
+== Lab task: vary maxsize (consumer delay 5 ms) ==
+maxsize | avg latency (ms) | max latency (ms) | producer blocks
+      1 |            9.805 |           12.218 |              19
+      2 |           13.819 |           15.457 |              18
+      5 |           25.453 |           30.891 |              15
+     10 |           39.701 |           56.750 |              10
+     20 |           49.233 |           98.285 |               0

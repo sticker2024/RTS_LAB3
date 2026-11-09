@@ -1,0 +1,4 @@
+[lockstep retry] after 500 rounds (0.63 s): retries T1=500 T2=500; work completed T1=False T2=False
+  -> both threads kept running (retry counters climbing) with zero forward progress: LIVELOCK
+[randomised back-off] finished in 0.007 s: retries T1=1 T2=0; work completed T1=True T2=True
+  -> random back-off breaks the lockstep symmetry and both tasks complete

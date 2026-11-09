@@ -1,0 +1,6 @@
+samples                      : 200
+minimum                      :      70.3 us
+mean                         :     183.0 us
+95th percentile              :     481.7 us
+maximum (worst case observed):    1176.2 us
+max / mean ratio             :       6.4x

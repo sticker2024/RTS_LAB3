@@ -1,0 +1,27 @@
+
+=== A: baseline (short top halves) ===
+source   prio     n |  resp min     mean      p95      max |  irq-lat mean     max |  top mean
+UART        1   500 |      3.90     4.53     5.79     8.09 |          0.29    2.74 |      0.62   (ms)
+ADC         2   200 |      9.29    12.47    15.58    42.32 |          0.01    0.05 |      0.60   (ms)
+ETH         3    99 |     29.69    30.82    32.72    35.08 |          0.74    3.26 |      1.10   (ms)
+
+=== B: long ADC top half (12 ms) ===
+source   prio     n |  resp min     mean      p95      max |  irq-lat mean     max |  top mean
+UART        1   499 |      3.91     6.23    12.67    19.49 |          1.85   12.09 |      0.60   (ms)
+ADC         2   199 |     25.11    28.81    31.62   120.32 |          0.33    1.41 |     12.39   (ms)
+ETH         3    99 |     41.74    63.91    74.29   127.30 |          7.95   14.76 |      1.15   (ms)
+
+=== C: long UART top half (8 ms) ===
+source   prio     n |  resp min     mean      p95      max |  irq-lat mean     max |  top mean
+UART        1   499 |     11.46    12.53    13.62    24.49 |          0.56    3.17 |      8.14   (ms)
+ADC         2   199 |     15.78    25.53    29.44    57.71 |          1.98   17.65 |      0.59   (ms)
+ETH         3    99 |     77.33    85.48   134.76   178.33 |          5.92   10.44 |      1.11   (ms)
+
+=== Sweep: UART period vs ETH (lowest priority) response latency ===
+ UART period (ms)  UART load %  ETH n  ETH mean  ETH p95  ETH max
+             40.0          8.8     59     25.53    28.30    47.98
+             20.0         17.5     59     30.90    32.29    32.70
+             12.0         29.2     59     37.32    40.52    66.02
+              8.0         43.8     59     71.86    80.12    91.44
+
+timeline saved: timeline.png

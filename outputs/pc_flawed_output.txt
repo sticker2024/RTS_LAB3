@@ -1,0 +1,11 @@
+FLAWED lock order: capacity=5, 3 producers, 3 consumers, 600 items
+*** WATCHDOG: DEADLOCK DETECTED ***
+    no progress for 1.50 s (produced=0, consumed=0, target=600)
+    lock-wait snapshot (thread: holding -> waiting for):
+      consumer-0 : holding ['stats_lock'] -> waiting for buffer_lock
+      consumer-1 : holding [] -> waiting for stats_lock
+      consumer-2 : holding [] -> waiting for stats_lock
+      producer-0 : holding [] -> waiting for buffer_lock
+      producer-1 : holding ['buffer_lock'] -> waiting for stats_lock
+      producer-2 : holding [] -> waiting for buffer_lock
+Result: DEADLOCK (simulation stalled, watchdog exited cleanly)

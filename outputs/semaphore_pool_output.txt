@@ -1,0 +1,39 @@
+
+-- pool_size=3 --
+  task 0: wait =     0.00 ms
+  task 1: wait =     0.00 ms
+  task 2: wait =     0.00 ms
+  task 3: wait =    62.11 ms
+  task 4: wait =   126.40 ms
+  task 5: wait =   133.74 ms
+  task 6: wait =   137.53 ms
+  task 7: wait =   226.05 ms
+  peak simultaneous holders = 3 (limit 3)
+  tasks proceeding immediately (<1 ms wait) = 3, tasks that waited = 5
+  mean wait = 85.73 ms, max wait = 226.05 ms
+
+-- pool_size=1 --
+  task 0: wait =     0.00 ms
+  task 1: wait =    63.66 ms
+  task 2: wait =   198.59 ms
+  task 3: wait =   325.36 ms
+  task 4: wait =   401.03 ms
+  task 5: wait =   500.88 ms
+  task 6: wait =   596.13 ms
+  task 7: wait =   711.55 ms
+  peak simultaneous holders = 1 (limit 1)
+  tasks proceeding immediately (<1 ms wait) = 1, tasks that waited = 7
+  mean wait = 349.65 ms, max wait = 711.55 ms
+
+-- pool_size=6 --
+  task 0: wait =     0.00 ms
+  task 1: wait =     0.00 ms
+  task 2: wait =     0.00 ms
+  task 3: wait =     0.00 ms
+  task 4: wait =     0.00 ms
+  task 5: wait =     0.00 ms
+  task 6: wait =    63.31 ms
+  task 7: wait =    75.35 ms
+  peak simultaneous holders = 6 (limit 6)
+  tasks proceeding immediately (<1 ms wait) = 6, tasks that waited = 2
+  mean wait = 17.33 ms, max wait = 75.35 ms

@@ -1,0 +1,3 @@
+threads=5 expected=5000 actual=1002 lost_updates=3998
+threads=5 expected=5000 actual=1004 lost_updates=3996
+threads=5 expected=5000 actual=1001 lost_updates=3999

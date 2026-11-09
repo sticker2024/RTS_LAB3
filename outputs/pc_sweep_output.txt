@@ -1,0 +1,8 @@
+capacity | throughput (items/s) | avg blocking (ms) | producer block (ms) | consumer block (ms)
+       1 |                309.6 |              7.32 |                7.13 |                7.52
+       2 |                513.0 |              4.48 |                4.35 |                4.61
+       5 |                746.2 |              2.83 |                2.82 |                2.84
+      10 |                747.8 |              2.76 |                2.75 |                2.77
+      25 |                747.4 |              2.78 |                2.77 |                2.79
+      50 |                747.7 |              2.81 |                2.80 |                2.82
+chart saved: throughput_vs_capacity.png

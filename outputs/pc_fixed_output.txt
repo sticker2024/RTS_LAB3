@@ -1,0 +1,2 @@
+ORDERED locks (buffer_lock -> stats_lock everywhere): capacity=5, 3 producers, 3 consumers, 600 items
+Completed: produced=600 consumed=600 elapsed=0.80 s throughput=746.6 items/s avg_block=2.85 ms
